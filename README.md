@@ -4,7 +4,7 @@ A turn-based, command-line restaurant management game written in Java.
 
 > **Project status:** In development \
 > **Group:** SCEF Grp 3 \
-> **Team members:** BAJPAI KASHVI, SINHA AYATI, THIO ZHONG PING, HAROLD LEE JING RUI \
+> **Team members:** BAJPAI KASHVI, SINHA AYATI, THIO ZHONG PING, HAROLD LEE JING RUI 
 
 ## 1. Project overview
 
@@ -18,4 +18,4 @@ The project is developed in **three independently runnable GitHub-tagged stages*
 | 2 — Customer behaviour | `stage-2` | Add VIP and Critic customers through polymorphism |
 | 3 — New role and menu policy | `stage-3` | Add Host, ComboMeal, and Happy Hour |
 
-**Scope:** The command-line interface is sufficient; the game runs offline. The interface collects decisions and displays results; gameplay rules belong in domain and control classes.
+**Scope:** Command-line interface is adequate. The game runs offline.
