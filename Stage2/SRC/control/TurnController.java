@@ -17,14 +17,14 @@ import java.util.List;
 import java.util.Locale;
 
 /*
- Runs one turn of the game. The GameController decides how many turns are played;
- this class decides what happens inside a single turn:
- 
- 1 arrivals -> display -> 2 manager choices (Waiter, then Chef) -> 3 kitchen and serving
- -> 4 eating and payment -> 5 waiting and abandonment.
- 
+Runs one turn of the game. The GameController decides how many turns are played.
+This class decides what happens inside a single turn:
+
+1 arrivals -> display -> 2 manager choices (Waiter, then Chef) -> 3 kitchen and serving
+-> 4 eating and payment -> 5 waiting and abandonment.
 (Step 6, the result check, belongs to the GameController after the last turn.)
  */
+
 public class TurnController {
     private final GameConfig config;
     private final Restaurant restaurant;
@@ -34,6 +34,7 @@ public class TurnController {
     private final Waiter waiter;
     private final Chef chef;
     private final Cashier cashier;
+    private final CustomerFactory customerFactory;
 
     private int nextCustomerId = 1;
 
@@ -45,6 +46,7 @@ public class TurnController {
         this.waiter = new Waiter(restaurant);
         this.chef = new Chef();
         this.cashier = new Cashier();
+        this.customerFactory = new CustomerFactory();
     }
 
     public void executeTurn(int turn) {
@@ -70,7 +72,7 @@ public class TurnController {
 
     private void processArrivals(int turn) {
         if (config.isArrivalTurn(turn)) {
-            Customer c = new Customer(nextCustomerId++);
+            Customer c = customerFactory.createCustomer(nextCustomerId++);
             restaurant.getWaitingQueue().enqueue(c);
             ui.displayMessage(c + " arrives and joins the waiting queue.");
         }

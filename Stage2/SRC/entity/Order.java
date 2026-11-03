@@ -16,14 +16,14 @@ public class Order {
     public Order(Customer customer, MenuItem item) {
         this.customer = customer;
         this.item = item;
-        this.priceCents = item.getPrice();
+        this.priceCents = customer.calculateBill(item);
         this.preparationRemaining = item.getPrepUnit();
         this.status = OrderStatus.PREPARING; // default state when an order is created
         this.turnReady = -1;
         this.turnServed = -1;
     }
 
-    // Spends one preparation unit on this order (no effect once it is fully prepared)
+    // Spends one preparation unit on this order (no effect once it is fully prepared).
     public void advancePreparation() {
         if (status == OrderStatus.PREPARING && preparationRemaining > 0) {
             preparationRemaining--;
@@ -48,7 +48,7 @@ public class Order {
         this.status = OrderStatus.PAID;
     }
 
-    // Used when the customer leaves unhappy: the unfinished order is cancelled
+    // Used when the customer leaves unhappy: the unfinished order is cancelled.
     public void markCancelled() {
         this.status = OrderStatus.CANCELLED;
     }
@@ -61,7 +61,7 @@ public class Order {
         return item;
     }
 
-    // Price locked when the order was taken, in cents
+    // Price locked when the order was taken (in cents)
     public int getPrice() {
         return priceCents;
     }
