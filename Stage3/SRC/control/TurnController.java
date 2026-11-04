@@ -11,6 +11,7 @@ import entity.OrderStatus;
 import entity.Restaurant;
 import entity.Table;
 import entity.WaitingQueue;
+import entity.HappyHour;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,7 @@ import java.util.Locale;
 Runs one turn of the game. The GameController decides how many turns are played.
 This class decides what happens inside a single turn:
 
-1 arrivals -> display -> 2 manager choices (Waiter, then Chef) -> 3 kitchen and serving
+1 arrivals -> display -> happy hour activation and recovery ->2 manager choices (Host then, Waiter, then Chef) -> 3 kitchen and serving
 -> 4 eating and payment -> 5 waiting and abandonment.
 (Step 6, the result check, belongs to the GameController after the last turn.)
  */
@@ -35,6 +36,8 @@ public class TurnController {
     private final Chef chef;
     private final Cashier cashier;
     private final CustomerFactory customerFactory;
+    private final Host host;
+    private final HappyHour happyHour;
 
     private int nextCustomerId = 1;
 
@@ -47,17 +50,27 @@ public class TurnController {
         this.chef = new Chef();
         this.cashier = new Cashier();
         this.customerFactory = new CustomerFactory();
+        this.happyHour = new HappyHour();
+        this.host = new Host(restaurant);
     }
 
     public void executeTurn(int turn) {
         processArrivals(turn);
         ui.displayState(turn, config.getMaxTurns(), restaurant, result);
+        processHappyHourActivation(turn);
+        applyHappyHourRecovery(turn);
+
+        ui.displayMessage("Host task (seat one customer, or Wait):");
+        Decision hostDecision = ui.promptDecision(buildHostOptions());
+        processHostAction(hostDecision, turn);
 
         // The Waiter always acts before the Chef, so a dish finished by the Chef this turn
         // can only be served from the next turn. The Chef may still cook an order the Waiter just took.
+        ui.displayMessage("Waiter task (one task, or Wait):");
         Decision waiterDecision = ui.promptDecision(buildWaiterOptions());
         processWaiterAction(waiterDecision, turn);
 
+        ui.displayMessage("Chef task (one preparation unit, or Wait):");
         Decision chefDecision = ui.promptDecision(buildChefOptions());
         processChefAction(chefDecision, turn);
 
@@ -68,7 +81,7 @@ public class TurnController {
         processAbandonment();
     }
 
-    // ---------------------------------------------------------------- step 1
+    // ---------------------------------------------------------------- step 1 - Arrivals
 
     private void processArrivals(int turn) {
         if (config.isArrivalTurn(turn)) {
@@ -78,15 +91,52 @@ public class TurnController {
         }
     }
 
-    // ---------------------------------------------------------------- step 2 (options)
+    // ---------------------------------------------------------------- step 2 - Happy hour activation and recovery
 
+    private void processHappyHourActivation(int turn) {
+        if (!happyHour.hasBeenActivated() && ui.promptHappyHourActivation()) {
+            happyHour.activate(turn);
+            ui.displayMessage("Happy Hour activated for this turn and the next.");
+        }
+        ui.displayHappyHour(happyHour.getRemainingTurns(turn), happyHour.hasBeenActivated(), happyHour.isActive(turn));
+    }
+
+    private void applyHappyHourRecovery(int turn) {
+        if (!happyHour.isActive(turn)) {
+            return;
+        }
+        List<Customer> customers = new ArrayList<>(restaurant.getWaitingQueue().getCustomers());
+        for (Table table : restaurant.getOccupiedTables()) {
+            customers.add(table.getOccupant());
+        }
+        for (Customer customer : customers) {
+            if (customer.isWaitingForService()) {
+                customer.recoverSatisfaction(happyHour.getRecovery());
+                ui.displayMessage(customer + " recovers satisfaction to " + customer.getSatisfaction() + ".");
+            }
+        }
+    }
+
+    // ---------------------------------------------------------------- step 2a - building staff options 
+    private List<Decision> buildHostOptions() {
+        List<Decision> options = new ArrayList<>();
+        Table freeTable = restaurant.getAvailableTable();
+        if (freeTable != null) {
+            for (Customer customer : restaurant.getWaitingQueue().getCustomers()) {
+                options.add(Decision.seat(customer, freeTable, "Host"));
+            }
+        }
+        options.add(Decision.doNothing("Host"));
+        return options;
+    }
+    
     private List<Decision> buildWaiterOptions() {
         List<Decision> options = new ArrayList<>();
 
         Table freeTable = restaurant.getAvailableTable();
         if (freeTable != null) {
             for (Customer c : restaurant.getWaitingQueue().getCustomers()) {
-                options.add(Decision.seat(c, freeTable));
+                options.add(Decision.seat(c, freeTable, "waiter"));
             }
         }
         for (Table t : restaurant.getOccupiedTables()) {
@@ -119,6 +169,18 @@ public class TurnController {
 
     // ---------------------------------------------------------------- step 3 (execution)
 
+    private void processHostAction(Decision d, int turn) {
+        if (d.getType() != Decision.Type.SEAT) {
+            return;
+        }
+        if (!d.getTable().isAvailable() || !restaurant.getWaitingQueue().remove(d.getCustomer())) {
+            ui.displayError("Cannot seat " + d.getCustomer() + ": no free table or customer not in queue.");
+            return;
+        }
+        host.seatCustomer(d.getCustomer(), d.getTable());
+        ui.displayMessage("Host seats " + d.getCustomer() + " at Table " + d.getTable().getTableNumber() + ".");
+    }
+
     private void processWaiterAction(Decision d, int turn) {
         switch (d.getType()) {
             case SEAT:
@@ -130,15 +192,14 @@ public class TurnController {
                 ui.displayMessage(d.getCustomer() + " is seated at Table " + d.getTable().getTableNumber() + ".");
                 break;
             case TAKE_ORDER:
-                Order order = waiter.takeOrder(d.getCustomer());
+                Order order = waiter.takeOrder(d.getCustomer(), new PricingCalculation(), happyHour.isActive(turn), turn);
                 ui.displayMessage(d.getCustomer() + " orders " + order.getItem().getName()
                         + " (" + money(order.getPrice()) + ", " + order.getItem().getPrepUnit() + " prep unit(s)).");
                 break;
             case SERVE:
                 waiter.serve(d.getOrder(), turn);
                 result.recordServed();
-                ui.displayMessage(d.getOrder().getItem().getName() + " served to " + d.getCustomer()
-                        + ". They start eating.");
+                ui.displayMessage(d.getOrder().getItem().getName() + " served to " + d.getCustomer() + ". They start eating.");
                 break;
             case WAIT:
             default:

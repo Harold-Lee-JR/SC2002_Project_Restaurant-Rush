@@ -140,4 +140,24 @@ public class UserInterface {
     private String money(int cents) {
         return String.format(Locale.US, "$%d.%02d", cents / 100, cents % 100);
     }
+
+    public void displayHappyHour(int remainingTurns, boolean activatedBefore, boolean isActive) {
+        if (!activatedBefore) System.out.println("Happy Hour: UNACTIVATED - " + remainingTurns + " turn(s) remaining (including this turn).");
+        else if (isActive) System.out.println("Happy Hour: ACTIVATED - " + remainingTurns + " turn(s) remaining (including this turn).");
+            else System.out.println("Happy Hour: Unavailable - " + remainingTurns + " turn(s) remaining (including this turn).");
+    }
+
+    public boolean promptHappyHourActivation() {
+        while (true) {
+            System.out.print("Activate Happy Hour? (once per game) [y/n]: ");
+            String answer = in.nextLine().trim();
+            if (answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes")) {
+                return true;
+            }
+            if (answer.equalsIgnoreCase("n") || answer.equalsIgnoreCase("no")) {
+                return false;
+            }
+            displayError("Type y/yes to activate Happy Hour, or n/no to save it for a later turn.");
+        }
+    }
 }

@@ -97,4 +97,11 @@ public class Customer {
     public String toString() {
         return getTypeLabel() + " #" + id;
     }
+
+    public void recoverSatisfaction(int points){
+        if(satisfaction < 100){
+            if((satisfaction + points) > 100) satisfaction = 100;
+            else satisfaction += points;
+        }
+    }
 }

@@ -20,9 +20,9 @@ public class Waiter {
     }
 
     // the customer picks the dish, the order starts as PREPARING
-    public Order takeOrder(Customer c) {
+    public Order takeOrder(Customer c, PricingCalculation pricing, boolean happyHourActive, int turn) {
         MenuItem item = c.chooseMenuItem(restaurant.getMenu());
-        Order order = new Order(c, item);
+        Order order = new Order(c, item, pricing.calculateFinalPrice(c, item, happyHourActive, turn));
         c.setOrder(order);
         c.setStatus(CustomerStatus.ORDERED);
         return order;

@@ -30,9 +30,9 @@ public class Decision {
         this.description = description;
     }
 
-    public static Decision seat(Customer c, Table t) {
+    public static Decision seat(Customer c, Table t, String role) {
         return new Decision(Type.SEAT, c, t, null,
-                "Waiter: seat " + c + " (satisfaction " + c.getSatisfaction() + ") at Table " + t.getTableNumber());
+                role + ": seat " + c + " (satisfaction " + c.getSatisfaction() + ") at Table " + t.getTableNumber());
     }
 
     public static Decision takeOrder(Customer c, Table t) {

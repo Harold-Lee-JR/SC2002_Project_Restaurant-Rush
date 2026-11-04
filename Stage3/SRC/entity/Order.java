@@ -13,10 +13,10 @@ public class Order {
     private int turnReady;
     private int turnServed;
 
-    public Order(Customer customer, MenuItem item) {
+    public Order(Customer customer, MenuItem item, int priceCents) {
         this.customer = customer;
         this.item = item;
-        this.priceCents = customer.calculateBill(item);
+        this.priceCents = priceCents;
         this.preparationRemaining = item.getPrepUnit();
         this.status = OrderStatus.PREPARING; // default state when an order is created
         this.turnReady = -1;

@@ -17,6 +17,13 @@ public class Restaurant {
         menu.add(new MenuItem("Salad", 900, 1));
         menu.add(new MenuItem("Burger", 1500, 1));
         menu.add(new MenuItem("Pasta", 1800, 2));
+        // Append each distinct pair of combo meals in menu order
+        int baseItemCount = menu.size();
+        for (int i = 0; i < baseItemCount; i++) {
+            for (int j = i + 1; j < baseItemCount; j++) {
+                menu.add(new ComboMeal(menu.get(i), menu.get(j)));
+            }
+        }
     }
 
     // First free table, or null if every table is occupied

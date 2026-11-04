@@ -6,7 +6,7 @@ public class ComboMeal extends MenuItem{
     private static final int COMBO_DISCOUNT = 10;
 
     public ComboMeal(MenuItem itemOne, MenuItem itemTwo){
-        super(itemOne.getName() + " + " + itemTwo.getName() + "Combo", 0, 0);
+        super(itemOne.getName() + " + " + itemTwo.getName() + " Combo", 0, 0);
         this.itemOne = itemOne;
         this.itemTwo = itemTwo;
     }
