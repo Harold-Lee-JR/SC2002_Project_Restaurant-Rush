@@ -1,6 +1,3 @@
-Cloning failed through the GraphQL route, so I'll read the repo with the REST API instead.
-
-Compiling and running Stage 2 with the group's `victory.txt` and `defeat.txt` input files to check the run steps.
 
 # Stage 2: how to run it, and what changed from Stage 1
 
