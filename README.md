@@ -19,3 +19,14 @@ The project is developed in **three independently runnable GitHub-tagged stages*
 | 3 — New role and menu policy | `stage-3` | Add Host, ComboMeal, and Happy Hour |
 
 **Scope:** Command-line interface is adequate. The game runs offline.
+
+## 2. Objective of game
+**To be victorious:**
+
+| Targets | Achieve by TURN 18 |
+| --- | --- |
+| 1 | At least 4 paid customers |
+| 2 | At least $45 revenue |
+| 3 | At least 60 average satisfaction of paid customers |
+
+**Otherwise player is defeated.**
