@@ -13,15 +13,7 @@ public class HappyHour {
     }
 
     public boolean isActive(int turn) {
-        if(!activated){
-            return activated;
-        } else {
-            if (activated && (startTurn+duration)>=turn){ //if it has been more than two turn since activation we return false
-                return activated;
-            } else {
-                return false;
-            }
-        }
+        return activated && turn >= startTurn && turn < startTurn + duration;
     }
 
     public boolean hasBeenActivated(){
@@ -31,21 +23,9 @@ public class HappyHour {
     }
 
     public int getRemainingTurns(int turn){
-        if(hasBeenActivated()){
-            int th = turn - startTurn;
-            switch (th){
-                case 0:
-                    return duration;
-                case 1:
-                    duration -=1;
-                    return duration;
-                case 2:
-                    duration -=1;
-                    return duration;
-                default:
-                    return 0;
-            }
-        } else return duration;
+        if (!hasBeenActivated()){
+            return duration;
+        } return Math.max(0, Math.min(duration, startTurn + duration - turn));
     }
 
     public int getDiscount(int turn){

@@ -6,6 +6,7 @@ import entity.MenuItem;
 import entity.Order;
 import entity.Restaurant;
 import entity.Table;
+import entity.HappyHour;
 
 public class Waiter {
     private final Restaurant restaurant;
@@ -20,9 +21,9 @@ public class Waiter {
     }
 
     // the customer picks the dish, the order starts as PREPARING
-    public Order takeOrder(Customer c, PricingCalculation pricing, boolean happyHourActive, int turn) {
+    public Order takeOrder(Customer c, PricingCalculation pricing, HappyHour happyHour, int turn) {
         MenuItem item = c.chooseMenuItem(restaurant.getMenu());
-        Order order = new Order(c, item, pricing.calculateFinalPrice(c, item, happyHourActive, turn));
+        Order order = new Order(c, item, pricing.calculateFinalPrice(c, item, happyHour, turn));
         c.setOrder(order);
         c.setStatus(CustomerStatus.ORDERED);
         return order;

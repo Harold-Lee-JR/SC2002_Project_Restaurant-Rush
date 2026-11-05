@@ -192,7 +192,7 @@ public class TurnController {
                 ui.displayMessage(d.getCustomer() + " is seated at Table " + d.getTable().getTableNumber() + ".");
                 break;
             case TAKE_ORDER:
-                Order order = waiter.takeOrder(d.getCustomer(), new PricingCalculation(), happyHour.isActive(turn), turn);
+                Order order = waiter.takeOrder(d.getCustomer(), new PricingCalculation(), happyHour, turn);
                 ui.displayMessage(d.getCustomer() + " orders " + order.getItem().getName()
                         + " (" + money(order.getPrice()) + ", " + order.getItem().getPrepUnit() + " prep unit(s)).");
                 break;
