@@ -1,0 +1,470 @@
+  - Welcome to Restaurant Rush! You are the manager. Play 18 turns, then see whether you win.
+  - Customer #1 arrives and joins the waiting queue.
+
+==================== TURN 1 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+Activate Happy Hour? (once per game) [y/n]: Happy Hour: UNACTIVATED - 2 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Customer #1 (satisfaction 100) at Table 1
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: seat Customer #1 (satisfaction 100) at Table 1
+  - Host seats Customer #1 at Table 1.
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: take order from Customer #1 at Table 1 (satisfaction 100)
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: take order from Customer #1 at Table 1 (satisfaction 100)
+  - Customer #1 orders Salad ($9.00, 1 prep unit(s)).
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Salad for Customer #1 at Table 1 (1 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Salad for Customer #1 at Table 1 (1 unit(s) left)
+  - Salad for Customer #1 is READY (it can be served from next turn).
+
+==================== TURN 2 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: Customer #1 [ORDERED, satisfaction 92] | Order: Salad $9.00 - READY
+  Table 2: free
+Activate Happy Hour? (once per game) [y/n]: Happy Hour: UNACTIVATED - 2 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: serve Salad (READY) to Customer #1 at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: serve Salad (READY) to Customer #1 at Table 1
+  - Salad served to Customer #1. They start eating.
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 3 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 1 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: Customer #1 [EATING, satisfaction 92] | Order: Salad $9.00 - SERVED
+  Table 2: free
+Activate Happy Hour? (once per game) [y/n]: Happy Hour: UNACTIVATED - 2 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: wait (do nothing this turn)
+Your choice [1-1]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #1 finished eating and is ready to pay.
+  - VIP Customer #2 arrives and joins the waiting queue.
+
+==================== TURN 4 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 1 | Left unhappy: 0
+Waiting queue:
+  VIP Customer #2 - satisfaction 100
+Tables:
+  Table 1: Customer #1 [READY_TO_PAY, satisfaction 92] | Order: Salad $9.00 - SERVED
+  Table 2: free
+Activate Happy Hour? (once per game) [y/n]:   - Happy Hour activated for this turn and the next.
+Happy Hour: ACTIVATED - 2 turn(s) remaining (including this turn).
+  - VIP Customer #2 recovers satisfaction to 100.
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat VIP Customer #2 (satisfaction 100) at Table 2
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: seat VIP Customer #2 (satisfaction 100) at Table 2
+  - Host seats VIP Customer #2 at Table 2.
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: take order from VIP Customer #2 at Table 2 (satisfaction 100)
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: take order from VIP Customer #2 at Table 2 (satisfaction 100)
+  - VIP Customer #2 orders Burger ($10.80, 1 prep unit(s)).
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Burger for VIP Customer #2 at Table 2 (1 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Burger for VIP Customer #2 at Table 2 (1 unit(s) left)
+  - Burger for VIP Customer #2 is READY (it can be served from next turn).
+  - Customer #1 pays $9.00 (satisfaction 92 recorded). Table 1 is free.
+
+==================== TURN 5 / 18 ====================
+Revenue: $9.00 | Avg satisfaction (paid): 92.0 | Paid: 1 | Served: 1 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: free
+  Table 2: VIP Customer #2 [ORDERED, satisfaction 95] | Order: Burger $10.80 - READY
+Happy Hour: ACTIVATED - 1 turn(s) remaining (including this turn).
+  - VIP Customer #2 recovers satisfaction to 100.
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: serve Burger (READY) to VIP Customer #2 at Table 2
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: serve Burger (READY) to VIP Customer #2 at Table 2
+  - Burger served to VIP Customer #2. They start eating.
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 6 / 18 ====================
+Revenue: $9.00 | Avg satisfaction (paid): 92.0 | Paid: 1 | Served: 2 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: free
+  Table 2: VIP Customer #2 [EATING, satisfaction 100] | Order: Burger $10.80 - SERVED
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: wait (do nothing this turn)
+Your choice [1-1]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - VIP Customer #2 finished eating and is ready to pay.
+  - Customer #3 arrives and joins the waiting queue.
+
+==================== TURN 7 / 18 ====================
+Revenue: $9.00 | Avg satisfaction (paid): 92.0 | Paid: 1 | Served: 2 | Left unhappy: 0
+Waiting queue:
+  Customer #3 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: VIP Customer #2 [READY_TO_PAY, satisfaction 100] | Order: Burger $10.80 - SERVED
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Customer #3 (satisfaction 100) at Table 1
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: seat Customer #3 (satisfaction 100) at Table 1
+  - Host seats Customer #3 at Table 1.
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: take order from Customer #3 at Table 1 (satisfaction 100)
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: take order from Customer #3 at Table 1 (satisfaction 100)
+  - Customer #3 orders Pasta ($18.00, 2 prep unit(s)).
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Pasta for Customer #3 at Table 1 (2 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Pasta for Customer #3 at Table 1 (2 unit(s) left)
+  - Chef cooked one unit of Pasta for Customer #3 (1 unit(s) left).
+  - VIP Customer #2 pays $10.80 (satisfaction 100 recorded). Table 2 is free.
+
+==================== TURN 8 / 18 ====================
+Revenue: $19.80 | Avg satisfaction (paid): 96.0 | Paid: 2 | Served: 2 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: Customer #3 [ORDERED, satisfaction 92] | Order: Pasta $18.00 - PREPARING (1 unit(s) left)
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: wait (do nothing this turn)
+Your choice [1-1]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Pasta for Customer #3 at Table 1 (1 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Pasta for Customer #3 at Table 1 (1 unit(s) left)
+  - Pasta for Customer #3 is READY (it can be served from next turn).
+
+==================== TURN 9 / 18 ====================
+Revenue: $19.80 | Avg satisfaction (paid): 96.0 | Paid: 2 | Served: 2 | Left unhappy: 0
+Waiting queue:
+  (empty)
+Tables:
+  Table 1: Customer #3 [ORDERED, satisfaction 84] | Order: Pasta $18.00 - READY
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: serve Pasta (READY) to Customer #3 at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: serve Pasta (READY) to Customer #3 at Table 1
+  - Pasta served to Customer #3. They start eating.
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Critic #4 arrives and joins the waiting queue.
+
+==================== TURN 10 / 18 ====================
+Revenue: $19.80 | Avg satisfaction (paid): 96.0 | Paid: 2 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 100
+Tables:
+  Table 1: Customer #3 [EATING, satisfaction 84] | Order: Pasta $18.00 - SERVED
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 100) at Table 2
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 100) at Table 2
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #3 finished eating and is ready to pay.
+
+==================== TURN 11 / 18 ====================
+Revenue: $19.80 | Avg satisfaction (paid): 96.0 | Paid: 2 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 88
+Tables:
+  Table 1: Customer #3 [READY_TO_PAY, satisfaction 84] | Order: Pasta $18.00 - SERVED
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 88) at Table 2
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 88) at Table 2
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #3 pays $18.00 (satisfaction 84 recorded). Table 1 is free.
+
+==================== TURN 12 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 76
+Tables:
+  Table 1: free
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 76) at Table 1
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 76) at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #5 arrives and joins the waiting queue.
+
+==================== TURN 13 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 64
+  Customer #5 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 64) at Table 1
+  2) Host: seat Customer #5 (satisfaction 100) at Table 1
+  3) Host: wait (do nothing this turn)
+Your choice [1-3]: > Host: seat Customer #5 (satisfaction 100) at Table 1
+  - Host seats Customer #5 at Table 1.
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 64) at Table 2
+  2) Waiter: take order from Customer #5 at Table 1 (satisfaction 100)
+  3) Waiter: wait (do nothing this turn)
+Your choice [1-3]: > Waiter: take order from Customer #5 at Table 1 (satisfaction 100)
+  - Customer #5 orders Salad + Pasta Combo ($24.30, 3 prep unit(s)).
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (3 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (3 unit(s) left)
+  - Chef cooked one unit of Salad + Pasta Combo for Customer #5 (2 unit(s) left).
+
+==================== TURN 14 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 52
+Tables:
+  Table 1: Customer #5 [ORDERED, satisfaction 92] | Order: Salad + Pasta Combo $24.30 - PREPARING (2 unit(s) left)
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 52) at Table 2
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 52) at Table 2
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (2 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (2 unit(s) left)
+  - Chef cooked one unit of Salad + Pasta Combo for Customer #5 (1 unit(s) left).
+
+==================== TURN 15 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 40
+Tables:
+  Table 1: Customer #5 [ORDERED, satisfaction 84] | Order: Salad + Pasta Combo $24.30 - PREPARING (1 unit(s) left)
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 40) at Table 2
+  2) Host: wait (do nothing this turn)
+Your choice [1-2]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) waiter: seat Critic #4 (satisfaction 40) at Table 2
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (1 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Salad + Pasta Combo for Customer #5 at Table 1 (1 unit(s) left)
+  - Salad + Pasta Combo for Customer #5 is READY (it can be served from next turn).
+  - Customer #6 arrives and joins the waiting queue.
+
+==================== TURN 16 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 3 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 28
+  Customer #6 - satisfaction 100
+Tables:
+  Table 1: Customer #5 [ORDERED, satisfaction 76] | Order: Salad + Pasta Combo $24.30 - READY
+  Table 2: free
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: seat Critic #4 (satisfaction 28) at Table 2
+  2) Host: seat Customer #6 (satisfaction 100) at Table 2
+  3) Host: wait (do nothing this turn)
+Your choice [1-3]: > Host: seat Customer #6 (satisfaction 100) at Table 2
+  - Host seats Customer #6 at Table 2.
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: take order from Customer #6 at Table 2 (satisfaction 100)
+  2) Waiter: serve Salad + Pasta Combo (READY) to Customer #5 at Table 1
+  3) Waiter: wait (do nothing this turn)
+Your choice [1-3]: > Waiter: serve Salad + Pasta Combo (READY) to Customer #5 at Table 1
+  - Salad + Pasta Combo served to Customer #5. They start eating.
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 17 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 4 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 16
+Tables:
+  Table 1: Customer #5 [EATING, satisfaction 76] | Order: Salad + Pasta Combo $24.30 - SERVED
+  Table 2: Customer #6 [SEATED, satisfaction 92]
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: take order from Customer #6 at Table 2 (satisfaction 92)
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: take order from Customer #6 at Table 2 (satisfaction 92)
+  - Customer #6 orders Burger + Pasta Combo ($29.70, 3 prep unit(s)).
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Burger + Pasta Combo for Customer #6 at Table 2 (3 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Burger + Pasta Combo for Customer #6 at Table 2 (3 unit(s) left)
+  - Chef cooked one unit of Burger + Pasta Combo for Customer #6 (2 unit(s) left).
+  - Customer #5 finished eating and is ready to pay.
+
+==================== TURN 18 / 18 ====================
+Revenue: $37.80 | Avg satisfaction (paid): 92.0 | Paid: 3 | Served: 4 | Left unhappy: 0
+Waiting queue:
+  Critic #4 - satisfaction 4
+Tables:
+  Table 1: Customer #5 [READY_TO_PAY, satisfaction 76] | Order: Salad + Pasta Combo $24.30 - SERVED
+  Table 2: Customer #6 [ORDERED, satisfaction 84] | Order: Burger + Pasta Combo $29.70 - PREPARING (2 unit(s) left)
+Happy Hour: Unavailable - 0 turn(s) remaining (including this turn).
+  - Host task (seat one customer, or Wait):
+
+  1) Host: wait (do nothing this turn)
+Your choice [1-1]: > Host: wait (do nothing this turn)
+  - Waiter task (one task, or Wait):
+
+  1) Waiter: wait (do nothing this turn)
+Your choice [1-1]: > Waiter: wait (do nothing this turn)
+  - Chef task (one preparation unit, or Wait):
+
+  1) Chef: cook Burger + Pasta Combo for Customer #6 at Table 2 (2 unit(s) left)
+  2) Chef: wait (do nothing this turn)
+Your choice [1-2]: > Chef: cook Burger + Pasta Combo for Customer #6 at Table 2 (2 unit(s) left)
+  - Chef cooked one unit of Burger + Pasta Combo for Customer #6 (1 unit(s) left).
+  - Customer #5 pays $24.30 (satisfaction 76 recorded). Table 1 is free.
+  - Critic #4 ran out of patience and left without paying.
+
+==================== GAME OVER ====================
+Turns used:                 18
+Customers served:           4
+Customers paid:             4   (target >= 4)
+Unhappy departures:         1
+Revenue:                    $62.10   (target >= $45.00)
+Avg satisfaction (paid):    88.0   (target >= 60)
+
+Outcome: VICTORY
+

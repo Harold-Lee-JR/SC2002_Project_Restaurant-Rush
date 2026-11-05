@@ -13,7 +13,7 @@ public class ComboMeal extends MenuItem{
 
     @Override 
     public int getPrice(){
-        return (int) (((itemOne.getPrice()+itemTwo.getPrice()) *COMBO_DISCOUNT)/100);
+        return (int) (((itemOne.getPrice()+itemTwo.getPrice()) *(100 - COMBO_DISCOUNT)/100));
     }
 
     @Override 
