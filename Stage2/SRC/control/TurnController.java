@@ -16,14 +16,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/*
-Runs one turn of the game. The GameController decides how many turns are played.
-This class decides what happens inside a single turn:
+//Runs one turn of the game. The GameController decides how many turns are played.
+//This class decides what happens inside a single turn:
 
-1 arrivals -> display -> 2 manager choices (Waiter, then Chef) -> 3 kitchen and serving
--> 4 eating and payment -> 5 waiting and abandonment.
-(Step 6, the result check, belongs to the GameController after the last turn.)
- */
+//1 arrivals -> display -> 2 manager choices (Waiter, then Chef) -> 3 kitchen and serving
+//-> 4 eating and payment -> 5 waiting and abandonment.
+//(Step 6, the result check, belongs to the GameController after the last turn.)
+
 
 public class TurnController {
     private final GameConfig config;
@@ -163,7 +162,7 @@ public class TurnController {
 
     // ---------------------------------------------------------------- step 4
 
-    /** Cashier handles at most one READY_TO_PAY customer per turn, the one served earliest first. */
+    // Cashier handles at most one READY_TO_PAY customer per turn, the one served earliest first. 
     private void processPayment() {
         Customer next = null;
         for (Table t : restaurant.getOccupiedTables()) {
@@ -184,7 +183,7 @@ public class TurnController {
                 + " recorded). Table " + table.getTableNumber() + " is free.");
     }
 
-    /** A customer served on an earlier turn finishes one full turn of eating and becomes READY_TO_PAY. */
+    // A customer served on an earlier turn finishes one full turn of eating and becomes READY_TO_PAY. 
     private void processEating(int turn) {
         for (Table t : restaurant.getOccupiedTables()) {
             Customer c = t.getOccupant();
@@ -197,7 +196,7 @@ public class TurnController {
 
     // ---------------------------------------------------------------- step 5
 
-    /** Unserved customers lose satisfaction; anyone reaching 0 leaves without paying. */
+    // Unserved customers lose satisfaction; anyone reaching 0 leaves without paying.
     private void processAbandonment() {
         WaitingQueue queue = restaurant.getWaitingQueue();
         List<Customer> present = new ArrayList<>(queue.getCustomers());
@@ -229,7 +228,7 @@ public class TurnController {
         ui.displayMessage(c + " ran out of patience and left without paying.");
     }
 
-    /** Formats an amount in cents as dollars, e.g. 1350 -> "$13.50". */
+    // Formats an amount in cents as dollars, e.g. 1350 -> "$13.50".
     private String money(int cents) {
         return String.format(Locale.US, "$%d.%02d", cents / 100, cents % 100);
     }
