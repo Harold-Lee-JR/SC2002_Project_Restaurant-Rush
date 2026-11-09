@@ -1,9 +1,8 @@
 package entity;
 
-/*
- One customer's order. The price (in cents) is locked when the order is created.
- Status only moves forward: PREPARING -> READY -> SERVED -> PAID, or to CANCELLED.
- */
+//One customer's order. The price (in cents) is locked when the order is created.
+ //Status only moves forward: PREPARING -> READY -> SERVED -> PAID, or to CANCELLED.
+ 
 public class Order {
     private final Customer customer;
     private final MenuItem item;
