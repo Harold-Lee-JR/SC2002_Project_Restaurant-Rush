@@ -4,15 +4,13 @@ import entity.Customer;
 import entity.CriticCustomer;
 import entity.VIPCustomer;
 
-/*
- Creates each arriving customer according to the fixed Stage 2 arrival schedule,
- so every run is reproducible. Still six arrivals (turns 1, 4, 7, 10, 13, 16):
+// Creates each arriving customer according to the fixed Stage 2 arrival schedule,
+//so every run is reproducible. Still six arrivals (turns 1, 4, 7, 10, 13, 16):
 
- arrival 1 Regular, 2 VIP, 3 Regular, 4 Critic, 5 Regular, 6 Regular.
+//arrival 1 Regular, 2 VIP, 3 Regular, 4 Critic, 5 Regular, 6 Regular.
+//This is the only place that knows the concrete customer types; after creation
+//every customer is handled as a plain Customer.
 
-This is the only place that knows the concrete customer types; after creation
-every customer is handled as a plain Customer.
-*/
 public class CustomerFactory {
     private static final int VIP_ARRIVAL = 2;
     private static final int CRITIC_ARRIVAL = 4;
