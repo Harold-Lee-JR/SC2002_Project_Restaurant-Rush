@@ -5,10 +5,9 @@ import entity.GameConfig;
 import entity.GameResult;
 import entity.Restaurant;
 
-/*
-Manages the 18-turn game loop; the TurnController manages what happens inside each turn.
-The game always runs every turn (no early ending), then the result is evaluated.
- */
+//Manages the 18-turn game loop; the TurnController manages what happens inside each turn.
+//The game always runs every turn (no early ending), then the result is evaluated.
+ 
 public class GameController {
     private final GameConfig config;
     private final UserInterface ui;
