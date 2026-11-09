@@ -1,10 +1,10 @@
 package entity;
 
-/*
- Fixed rules of the base setting (see assignment Section 2.1).
- Immutable: all values are set once and only exposed through getters.
- Money is stored in integer cents.
- */
+
+ //Fixed rules of the base setting (see assignment Section 2.1).
+ //Immutable: all values are set once and only exposed through getters.
+ //Money is stored in integer cents.
+ 
 public class GameConfig {
     private final int maxTurns = 18;
     private final int tableCount = 2;
