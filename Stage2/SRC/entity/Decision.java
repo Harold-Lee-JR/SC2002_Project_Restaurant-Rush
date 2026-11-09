@@ -1,11 +1,10 @@
 package entity;
 
-/*
- One option the manager can pick for a staff member in a turn.
- The controller builds a list of valid Decisions, the UI lets the player choose one,
- and the controller executes it. Because only valid options are ever offered,
- the UI never needs to know any game rules.
- */
+//One option the manager can pick for a staff member in a turn
+ //The controller builds a list of valid Decisions, the UI lets the player choose one
+ //and the controller executes it. Because only valid options are ever offered,
+ //the UI never needs to know any game rules
+ 
 public class Decision {
 
     public enum Type {
