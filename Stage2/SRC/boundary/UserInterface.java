@@ -64,7 +64,7 @@ public class UserInterface {
         }
     }
 
-    // keeps asking until the player types a valid number; if the input runs out it picks wait
+    // keeps asking until the player types a valid number also if the input runs out it picks wait
     public Decision promptDecision(List<Decision> options) {
         System.out.println();
         for (int i = 0; i < options.size(); i++) {
