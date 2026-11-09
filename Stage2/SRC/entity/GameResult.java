@@ -1,9 +1,8 @@
 package entity;
 
-/*
- Running score of the game. Revenue only ever grows through recordPayment(),
- so unpaid or abandoned orders can never count towards it. Revenue is kept in integer cents.
- */
+//Running score of the game. Revenue only ever grows through recordPayment(),
+// so unpaid or abandoned orders can never count towards it. Revenue is kept in integer cents.
+
 public class GameResult {
     private int revenueCents;
     private int paidCount;
