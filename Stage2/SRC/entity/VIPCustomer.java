@@ -1,9 +1,8 @@
 package entity;
 
-/*
-VIP customer: more patient than a Regular (loses 5 satisfaction per waiting turn)
-and gets 10% off the bill (rounded to the nearest cent). Orders the same way as a Regular.
- */
+//VIP customer: more patient than a Regular (loses 5 satisfaction per waiting turn)
+//and gets 10% off the bill (rounded to the nearest cent). Orders the same way as a Regular.
+ 
 public class VIPCustomer extends Customer {
     private static final int VIP_SATISFACTION_LOSS = 5;
     private static final double VIP_DISCOUNT_RATE = 0.10;
