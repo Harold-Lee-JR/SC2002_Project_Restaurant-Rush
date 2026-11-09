@@ -2,11 +2,11 @@ package entity;
 
 import java.util.List;
 
-/*
- A Regular restaurant customer, and the base class for every other customer type.
- Behaviour that differs between types (satisfaction loss, food choice, bill, label)
- is exposed as methods that subclasses override, so the controllers never check the type.
- */
+
+ //A Regular restaurant customer, and the base class for every other customer type.
+ //Behaviour that differs between types (satisfaction loss, food choice, bill, label)
+ //is exposed as methods that subclasses override, so the controllers never check the type.
+ 
 public class Customer {
     private static final int STARTING_SATISFACTION = 100;
     private static final int REGULAR_SATISFACTION_LOSS = 8;
@@ -34,10 +34,10 @@ public class Customer {
         satisfaction = Math.max(0, satisfaction - getSatisfactionLoss());
     }
 
-    /*
-     Customers choose their own food. Deterministic rule (documented for reproducible runs):
-     customer #n picks menu item ((n - 1) mod menu size), i.e. Salad, Burger, Pasta, Salad, Burger, Pasta.
-     */
+    
+     //Customers choose their own food. Deterministic rule (documented for reproducible runs)
+     //customer #n picks menu item ((n - 1) mod menu size) i.e. Salad, Burger, Pasta, Salad, Burger, Pasta
+     
     public MenuItem chooseMenuItem(List<MenuItem> menu) {
         return menu.get((id - 1) % menu.size());
     }
@@ -47,7 +47,7 @@ public class Customer {
         return item.getPrice();
     }
 
-    // Name shown in messages, e.g. "Customer #1" or "VIP Customer #2". */
+    // Name shown in messages, e.g. "Customer #1" or "VIP Customer #2". 
     protected String getTypeLabel() {
         return "Customer";
     }
