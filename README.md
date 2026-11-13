@@ -30,3 +30,7 @@ The project is developed in **three independently runnable GitHub-tagged stages*
 | 3 | At least 60 average satisfaction of paid customers |
 
 **Otherwise player is defeated.**
+## AI Chat Histories:
+**Kashvi:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/blob/Kashvi(AI_history)/ai-history/chat-01.md
+
+
