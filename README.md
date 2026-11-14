@@ -42,4 +42,6 @@ The project is developed in **three independently runnable GitHub-tagged stages*
 ## AI Chat Histories:
 **Kashvi:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/blob/Kashvi(AI_history)/ai-history/chat-01.md
 
+**Ayati:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Ayati(AI_history)/ai-history
+
 
