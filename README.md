@@ -4,7 +4,17 @@ A turn-based, command-line restaurant management game written in Java.
 
 > **Project status:** In development \
 > **Group:** SCEF Grp 3 \
-> **Team members:** BAJPAI KASHVI, SINHA AYATI, THIO ZHONG PING, HAROLD LEE JING RUI 
+> **Team members:** BAJPAI KASHVI, SINHA AYATI, THIO ZHONG PING, HAROLD LEE JING RUI
+>
+
+## Links to stages:
+
+**Stage 1:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/main/Stage1
+
+**Stage 2:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/main/Stage2
+
+**Stage 3:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/main/Stage3
+
 
 ## Project overview
 
@@ -60,3 +70,7 @@ video Link: https://youtu.be/sqYVwMog92k
 **Harold:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Harold(AI_history)/AI_history
 
 **Zhong Ping:** Not Applicable
+
+
+
+
