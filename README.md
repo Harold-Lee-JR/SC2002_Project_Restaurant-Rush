@@ -15,7 +15,8 @@ A turn-based, command-line restaurant management game written in Java.
 
 **Stage 3:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/main/Stage3
 
-## Links to Group Report: https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/blob/main/SCEF_Group3_Report.pdf
+## Link to Group Report: 
+https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/blob/main/SCEF_Group3_Report.pdf
 
 
 ## Project overview
