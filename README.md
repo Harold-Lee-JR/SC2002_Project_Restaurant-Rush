@@ -39,6 +39,19 @@ The project is developed in **three independently runnable GitHub-tagged stages*
    * javac Main.java
    * java Main
 
+## Video Details
+video Link: https://youtu.be/sqYVwMog92k
+
+| Scope | Timestamp |
+|---|---|
+| The game launching from the submitted project | 2:51 |
+| Meaningful manager choices, including a decision where staff are constrained | 3:12 |
+| A dish going READY → SERVED → payment | 4:29 |
+| A VIP or Critic behaviour | 5:45 |
+| A Stage 3 feature | 12:41 |
+| One victory and one defeat (separate reproducible runs, or an accelerated replay) | 6:32 |
+| The stage tag comparisons and the diagrams | 8:10 |
+
 ## AI Chat Histories:
 **Kashvi:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/blob/Kashvi(AI_history)/ai-history/chat-01.md
 
