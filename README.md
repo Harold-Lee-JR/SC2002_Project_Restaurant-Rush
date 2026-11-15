@@ -44,6 +44,6 @@ The project is developed in **three independently runnable GitHub-tagged stages*
 
 **Ayati:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Ayati(AI_history)/ai-history
 
-**Harold** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Harold(AI_history)/AI_history
+**Harold:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Harold(AI_history)/AI_history
 
 
