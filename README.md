@@ -59,4 +59,4 @@ video Link: https://youtu.be/sqYVwMog92k
 
 **Harold:** https://github.com/Harold-Lee-JR/SC2002_Project_Restaurant-Rush/tree/Harold(AI_history)/AI_history
 
-
+**Zhong Ping:** Not Applicable
