@@ -1,0 +1,365 @@
+  - Welcome to Restaurant Rush! You are the manager. Play 18 turns, then see whether you win.
+  - Customer #1 arrives and joins the waiting queue.
+
+==================== TURN 1 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 100) at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 2 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 92) at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 3 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 84) at Table 1
+  2) Waiter: wait (do nothing this turn)
+Your choice [1-2]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #2 arrives and joins the waiting queue.
+
+==================== TURN 4 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 76
+  Customer #2 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 76) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 100) at Table 1
+  3) Waiter: wait (do nothing this turn)
+Your choice [1-3]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 5 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 68
+  Customer #2 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 68) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 92) at Table 1
+  3) Waiter: wait (do nothing this turn)
+Your choice [1-3]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 6 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 60
+  Customer #2 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 60) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 84) at Table 1
+  3) Waiter: wait (do nothing this turn)
+Your choice [1-3]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #3 arrives and joins the waiting queue.
+
+==================== TURN 7 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 52
+  Customer #2 - satisfaction 76
+  Customer #3 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 52) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 76) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 100) at Table 1
+  4) Waiter: wait (do nothing this turn)
+Your choice [1-4]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 8 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 44
+  Customer #2 - satisfaction 68
+  Customer #3 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 44) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 68) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 92) at Table 1
+  4) Waiter: wait (do nothing this turn)
+Your choice [1-4]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 9 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 36
+  Customer #2 - satisfaction 60
+  Customer #3 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 36) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 60) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 84) at Table 1
+  4) Waiter: wait (do nothing this turn)
+Your choice [1-4]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #4 arrives and joins the waiting queue.
+
+==================== TURN 10 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 28
+  Customer #2 - satisfaction 52
+  Customer #3 - satisfaction 76
+  Customer #4 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 28) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 52) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 76) at Table 1
+  4) Waiter: seat Customer #4 (satisfaction 100) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 11 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 20
+  Customer #2 - satisfaction 44
+  Customer #3 - satisfaction 68
+  Customer #4 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 20) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 44) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 68) at Table 1
+  4) Waiter: seat Customer #4 (satisfaction 92) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 12 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 12
+  Customer #2 - satisfaction 36
+  Customer #3 - satisfaction 60
+  Customer #4 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 12) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 36) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 60) at Table 1
+  4) Waiter: seat Customer #4 (satisfaction 84) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #5 arrives and joins the waiting queue.
+
+==================== TURN 13 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 0
+Waiting queue:
+  Customer #1 - satisfaction 4
+  Customer #2 - satisfaction 28
+  Customer #3 - satisfaction 52
+  Customer #4 - satisfaction 76
+  Customer #5 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #1 (satisfaction 4) at Table 1
+  2) Waiter: seat Customer #2 (satisfaction 28) at Table 1
+  3) Waiter: seat Customer #3 (satisfaction 52) at Table 1
+  4) Waiter: seat Customer #4 (satisfaction 76) at Table 1
+  5) Waiter: seat Customer #5 (satisfaction 100) at Table 1
+  6) Waiter: wait (do nothing this turn)
+Your choice [1-6]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #1 ran out of patience and left without paying.
+
+==================== TURN 14 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 1
+Waiting queue:
+  Customer #2 - satisfaction 20
+  Customer #3 - satisfaction 44
+  Customer #4 - satisfaction 68
+  Customer #5 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #2 (satisfaction 20) at Table 1
+  2) Waiter: seat Customer #3 (satisfaction 44) at Table 1
+  3) Waiter: seat Customer #4 (satisfaction 68) at Table 1
+  4) Waiter: seat Customer #5 (satisfaction 92) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 15 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 1
+Waiting queue:
+  Customer #2 - satisfaction 12
+  Customer #3 - satisfaction 36
+  Customer #4 - satisfaction 60
+  Customer #5 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #2 (satisfaction 12) at Table 1
+  2) Waiter: seat Customer #3 (satisfaction 36) at Table 1
+  3) Waiter: seat Customer #4 (satisfaction 60) at Table 1
+  4) Waiter: seat Customer #5 (satisfaction 84) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #6 arrives and joins the waiting queue.
+
+==================== TURN 16 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 1
+Waiting queue:
+  Customer #2 - satisfaction 4
+  Customer #3 - satisfaction 28
+  Customer #4 - satisfaction 52
+  Customer #5 - satisfaction 76
+  Customer #6 - satisfaction 100
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #2 (satisfaction 4) at Table 1
+  2) Waiter: seat Customer #3 (satisfaction 28) at Table 1
+  3) Waiter: seat Customer #4 (satisfaction 52) at Table 1
+  4) Waiter: seat Customer #5 (satisfaction 76) at Table 1
+  5) Waiter: seat Customer #6 (satisfaction 100) at Table 1
+  6) Waiter: wait (do nothing this turn)
+Your choice [1-6]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+  - Customer #2 ran out of patience and left without paying.
+
+==================== TURN 17 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 2
+Waiting queue:
+  Customer #3 - satisfaction 20
+  Customer #4 - satisfaction 44
+  Customer #5 - satisfaction 68
+  Customer #6 - satisfaction 92
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #3 (satisfaction 20) at Table 1
+  2) Waiter: seat Customer #4 (satisfaction 44) at Table 1
+  3) Waiter: seat Customer #5 (satisfaction 68) at Table 1
+  4) Waiter: seat Customer #6 (satisfaction 92) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== TURN 18 / 18 ====================
+Revenue: $0.00 | Avg satisfaction (paid): N/A | Paid: 0 | Served: 0 | Left unhappy: 2
+Waiting queue:
+  Customer #3 - satisfaction 12
+  Customer #4 - satisfaction 36
+  Customer #5 - satisfaction 60
+  Customer #6 - satisfaction 84
+Tables:
+  Table 1: free
+  Table 2: free
+
+  1) Waiter: seat Customer #3 (satisfaction 12) at Table 1
+  2) Waiter: seat Customer #4 (satisfaction 36) at Table 1
+  3) Waiter: seat Customer #5 (satisfaction 60) at Table 1
+  4) Waiter: seat Customer #6 (satisfaction 84) at Table 1
+  5) Waiter: wait (do nothing this turn)
+Your choice [1-5]: > Waiter: wait (do nothing this turn)
+
+  1) Chef: wait (do nothing this turn)
+Your choice [1-1]: > Chef: wait (do nothing this turn)
+
+==================== GAME OVER ====================
+Turns used:                 18
+Customers served:           0
+Customers paid:             0   (target >= 4)
+Unhappy departures:         2
+Revenue:                    $0.00   (target >= $45.00)
+Avg satisfaction (paid):    N/A   (target >= 60)
+
+Outcome: DEFEAT
